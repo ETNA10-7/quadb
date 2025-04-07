@@ -1,0 +1,19 @@
+type Proposal = record {
+  id : nat64;
+  owner : text;
+  description : text;
+  is_active : bool;
+};
+type Votes = record {
+  reject : nat32;
+  pass : nat32;
+  approve : nat32;
+  voted_users : vec text;
+};
+service : {
+  close_proposal : (nat64) -> ();
+  create_proposal : (text) -> (nat64);
+  get_all_data : () -> (vec Proposal, vec record { nat64; Votes }) query;
+  get_results : (nat64) -> (opt Votes) query;
+  vote : (nat64, text) -> ();
+}
