@@ -1,0 +1,5 @@
+service : () -> {
+  add_task : (text) -> (nat64);
+  delete_task : (nat64) -> (bool);
+  get_tasks : () -> (vec record { nat64; text }) query;
+}
