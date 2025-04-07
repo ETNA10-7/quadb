@@ -1,0 +1,11 @@
+type Votes = record {
+  reject : nat32;
+  pass : nat32;
+  approve : nat32;
+  voted_users : vec text;
+};
+service : {
+  create_proposal : (text) -> (nat64);
+  get_results : (nat64) -> (opt Votes) query;
+  vote : (nat64, text) -> ();
+}

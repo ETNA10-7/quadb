@@ -1,0 +1,15 @@
+type Transaction = record {
+  id : nat64;
+  user : text;
+  timestamp : nat64;
+  gas_fee : nat64;
+};
+type TransactionWithCycles = record {
+  transaction : Transaction;
+  cycles_used : nat;
+};
+service : {
+  get_recent_transactions : () -> (vec TransactionWithCycles) query;
+  get_transactions : () -> (vec TransactionWithCycles) query;
+  record_transaction : (text, nat64) -> (nat64);
+}

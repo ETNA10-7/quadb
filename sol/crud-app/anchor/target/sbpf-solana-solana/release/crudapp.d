@@ -1,0 +1,1 @@
+/home/Arch/Application/git_hub/rough/solana_camp/crud-app/anchor/target/sbpf-solana-solana/release/crudapp.so: /home/Arch/Application/git_hub/rough/solana_camp/crud-app/anchor/programs/crudapp/src/lib.rs

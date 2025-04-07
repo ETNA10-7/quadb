@@ -1,0 +1,1 @@
+/home/Arch/Application/git_hub/rough/solana_camp/voting/anchor/target/sbpf-solana-solana/release/libvoting.rlib: /home/Arch/Application/git_hub/rough/solana_camp/voting/anchor/programs/voting/src/lib.rs
