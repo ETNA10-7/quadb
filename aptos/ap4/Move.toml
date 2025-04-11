@@ -1,0 +1,16 @@
+[package]
+name = "lebr"
+version = "1.0.0"
+authors = []
+
+[addresses]
+lender = "0x0de8d2133c6b8649ddda32e60aabb0f95fe07f925a490112ca5e5cb8fa678530"
+borrower = "0x7a0e6dc7b56d76103d5bf95288e03541e0e78c6648896c1ce2aef2f8a5388849"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]

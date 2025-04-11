@@ -1,0 +1,15 @@
+[package]
+name = "strt"
+version = "1.0.0"
+authors = []
+
+[addresses]
+strt = "0xb5f8f455a53c29cad1db112ab2d2d60da0de50deb6730f41c6e43b333ab54f8c"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]

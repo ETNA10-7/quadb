@@ -1,0 +1,15 @@
+[package]
+name = "gas_tracker"
+version = "1.0.0"
+authors = []
+
+[addresses]
+gas_tracker = "0x3c5a0c86aee971b9de75fa15a615383e6c2de69508b9b71d9f1463749b178d23"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
